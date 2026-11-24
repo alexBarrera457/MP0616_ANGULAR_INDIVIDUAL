@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
-  templateUrl: './app.html',
+  template: `
+    Hello Universe
+  `,
+  styles: `
+    :host {
+      color: #a144eb;
+    }
+  `,
 })
-export class App {
-  protected readonly title = signal('MP0616_ANGULAR');
-}
+export class App {}
